@@ -1,0 +1,27 @@
+[project]
+name = "template"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Alexey S. Mirniy", email = "alexey.mirniy@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+    "black>=24.10.0",
+    "pylint>=3.3.3",
+    "ipython>=8.31.0",
+]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
